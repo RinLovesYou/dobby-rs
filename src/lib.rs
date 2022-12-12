@@ -106,6 +106,7 @@ pub enum DobbyMemoryOperationError {
     None,
 }
 
+#[cfg(not(target_os = "windows"))]
 /// Patch the code at `addr` with supplied bytes.
 /// # Safety
 /// THIS FUNCTION IS NOT SAFE.
